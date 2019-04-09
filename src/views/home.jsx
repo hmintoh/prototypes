@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
+import Particles from "react-particles-js";
 import logo from "../assets/images/prototype_dark.png";
 import bloomsLink from "../assets/images/blooms.png";
 import coffeeLink from "../assets/images/coffee.png";
@@ -9,15 +10,36 @@ class Home extends Component {
   render() {
     return (
       <section id="home">
+        <div id="particles-js">
+          <Particles
+            params={{
+              particles: {
+                number: { value: 50 },
+                size: { value: 1 },
+                move: { speed: 2 },
+                color: { value: "#a66454" },
+                line_linked: { color: "#a66454" }
+              },
+              interactivity: {
+                events: {
+                  onhover: { enable: true, mode: "bubble" }
+                },
+                modes: {
+                  bubble: { size: 4 }
+                }
+              }
+            }}
+          />
+        </div>
         <div className="homeGrid">
           <div className="homeGrid__logo">
             <img
               src={logo}
               alt="prototype"
-              className="logo--large animated fadeIn slower delay-2s"
+              className="logo--large animated fadeIn slower delay-1s"
             />
           </div>
-          <div className="homeGrid__summary animated fadeIn slower">
+          <div className="homeGrid__summary animated fadeIn slower delay-2s">
             <p>
               To prototype is to materialise an idea, no matter how primitive
               the result might seem. That very act takes us on a path of

@@ -2,6 +2,13 @@
   background: var(--brandcol-shared-natural);
   color: var(--fontcol-prototype-default);
   height: 94vh;
+  overflow: hidden;
+}
+
+#particles-js {
+  position: absolute;
+  width: 100%;
+  height: 100%;
 }
 
 .homeGrid {
@@ -15,6 +22,19 @@
   text-align: center;
 }
 
+@media (max-width: 500px) {
+  .homeGrid {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: auto auto auto;
+    grid-template-areas:
+      ". logo ."
+      ". summary ."
+      ". links .";
+    text-align: center;
+  }
+}
+
 .homeGrid > .homeGrid__logo {
   grid-area: logo;
   margin-top: 10%;
@@ -23,7 +43,7 @@
 
 .logo--large {
   display: inline-block;
-  width: 360px;
+  width: 340px;
 }
 
 .homeGrid > .homeGrid__summary {
