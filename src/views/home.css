@@ -1,7 +1,7 @@
 #home {
   background: var(--brandcol-shared-natural);
   color: var(--fontcol-prototype-default);
-  min-height: inherit;
+  height: 94vh;
 }
 
 .homeGrid {

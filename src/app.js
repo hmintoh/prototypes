@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import Route from "./router";
+import Footer from "./components/footer/footer";
 import "./app.css";
 
 class App extends Component {
@@ -7,6 +8,7 @@ class App extends Component {
     return (
       <div className="app">
         <Route />
+        <Footer />
       </div>
     );
   }
