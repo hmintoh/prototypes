@@ -11,9 +11,13 @@ class Home extends Component {
       <section id="home">
         <div className="homeGrid">
           <div className="homeGrid__logo">
-            <img src={logo} alt="prototype" className="logo--large" />
+            <img
+              src={logo}
+              alt="prototype"
+              className="logo--large animated fadeIn slower delay-2s"
+            />
           </div>
-          <div className="homeGrid__summary">
+          <div className="homeGrid__summary animated fadeIn slower">
             <p>
               To prototype is to materialise an idea, no matter how primitive
               the result might seem. That very act takes us on a path of
