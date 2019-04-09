@@ -4,8 +4,8 @@ import "./app.css";
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        <header className="App-header">prototypes.sg</header>
+      <div className="app">
+        <header className="app__header">prototypes.sg</header>
       </div>
     );
   }

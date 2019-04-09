@@ -1,14 +1,26 @@
+:root {
+  --brandcol-coffee-blue: #262f3e;
+  --brandcol-shared-maize: #c6a351;
+  --brandcol-shared-natural: #bdbdae;
+  --brandcol-shared-pink: #a66454;
+  --brandcol-blooms-pink-light: #c6ab9c;
+  --fontcol-prototype-light: #f6f4f3;
+  --fontcol-prototype-default: #292e3d;
+  --fontcol-prototype-danger: #f44336;
+  --fontcol-prototype-warning: #eba335;
+  --fontcol-prototype-success: #71ac50;
+}
+
+@font-face {
+  font-family: "Quicksand";
+  src: url("./assets//fonts/Quicksand-Medium.ttf");
+}
+
 body {
   margin: 0;
   padding: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
+  width: 100vw;
+  height: 100vh;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-}
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
 }
