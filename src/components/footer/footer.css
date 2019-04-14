@@ -5,4 +5,5 @@ footer {
   font-size: 0.7em;
   padding: 12px 0px;
   text-align: center;
+  z-index: 1;
 }

@@ -1,8 +1,9 @@
 #home {
   background: var(--brandcol-shared-natural);
   color: var(--fontcol-prototype-default);
-  height: 94vh;
-  overflow: hidden;
+  align-items: center;
+  display: flex;
+  min-height: 100vh;
 }
 
 #particles-js {
@@ -22,7 +23,7 @@
   text-align: center;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 800px) {
   .homeGrid {
     display: grid;
     grid-template-columns: 1fr 2fr 1fr;
@@ -37,7 +38,6 @@
 
 .homeGrid > .homeGrid__logo {
   grid-area: logo;
-  margin-top: 10%;
   text-align: center;
 }
 
