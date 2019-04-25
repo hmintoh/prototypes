@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import Particles from "react-particles-js";
-import logo from "../assets/images/prototype_dark.png";
+import logo from "../assets/images/prototype_asphalt_bold.png";
 import bloomsLink from "../assets/images/blooms.png";
 import coffeeLink from "../assets/images/coffee.png";
 import "./home.css";
