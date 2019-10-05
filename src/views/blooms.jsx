@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import "./blooms.css";
+import "./blooms.scss";
 
 class Blooms extends Component {
   render() {

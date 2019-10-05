@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import "./coffee.css";
+import "./coffee.scss";
 
 class Coffee extends Component {
   render() {

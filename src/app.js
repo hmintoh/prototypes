@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import Route from "./router";
 import Footer from "./components/footer/footer";
-import "./app.css";
+import "./app.scss";
 
 class App extends Component {
   render() {
