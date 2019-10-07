@@ -1,62 +1,43 @@
+@import "../styles/tokens.scss";
+
 #home {
-  background: var(--brandcol-shared-natural);
-  color: var(--fontcol-prototype-default);
-  align-items: center;
-  display: flex;
+  background: $brandcol-shared-natural;
+  color: $fontcol-prototype-default;
   min-height: 100vh;
+  display: flex;
+  align-items: center;
 }
 
 #particles-js {
   position: absolute;
   width: 100%;
   height: 100%;
+  z-index: -1;
 }
 
-.homeGrid {
-  display: grid;
-  grid-template-columns: auto 40% auto;
-  grid-template-rows: auto auto auto;
-  grid-template-areas:
-    ". logo ."
-    ". summary ."
-    ". links .";
+.homeGrid__container {
   text-align: center;
-}
+  width: 100%;
+  height: 100%;
+  margin: auto;
+  max-width: $breakpoint-tablet;
 
-@media (max-width: 800px) {
-  .homeGrid {
-    display: grid;
-    grid-template-columns: 1fr 2fr 1fr;
-    grid-template-rows: auto auto auto;
-    grid-template-areas:
-      ". logo ."
-      ". summary ."
-      ". links .";
-    text-align: center;
+  .homeGrid__logo {
+    margin: auto;
+    .logo {
+      width: 260px;
+    }
+  }
+
+  .homeGrid__summary {
+    padding: 0rem 1rem;
   }
 }
 
-.homeGrid > .homeGrid__logo {
-  grid-area: logo;
-  text-align: center;
-}
-
-.logo--large {
-  display: inline-block;
-  width: 340px;
-}
-
-.homeGrid > .homeGrid__summary {
-  grid-area: summary;
-  padding: 0px 16px;
-}
-
-.homeGrid > .homeGrid__links {
-  grid-area: links;
-  display: none;
-}
-
-.logo--standard {
-  display: inline-block;
-  width: 240px;
+@media (min-width: $breakpoint-tablet) {
+  .homeGrid__container {
+    .homeGrid__summary {
+      padding: 0rem 5rem;
+    }
+  }
 }

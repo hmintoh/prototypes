@@ -1,9 +1,17 @@
+@import "../../styles/tokens.scss";
+
 footer {
   bottom: 0;
-  background-color: var(--brandcol-shared-maize);
-  color: var(--fontcol-prototype-default);
-  font-size: 0.7em;
-  padding: 12px 0px;
+  background-color: $brandcol-shared-maize;
+  color: $fontcol-prototype-default;
+  font-size: 0.7rem;
+  padding: 0.7rem 0rem;
   text-align: center;
-  z-index: 1;
+}
+
+@media (min-width: $breakpoint-tablet) {
+  footer {
+    font-size: 0.8rem;
+    padding: 0.8rem 0rem;
+  }
 }
