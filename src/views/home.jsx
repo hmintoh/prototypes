@@ -7,6 +7,10 @@ import coffeeLink from "../assets/images/coffee.png";
 import "./home.scss";
 
 class Home extends Component {
+  componentDidMount() {
+    window.scrollTo(0, 0);
+  }
+
   render() {
     return (
       <section id="home">
@@ -51,14 +55,9 @@ class Home extends Component {
               brewing can finally bloom in full.
             </p>
 
-            <div className="homeGrid__links">
+            <div className="homeGrid__links animated fadeIn slower delay-2s">
               <Link to="/coffee">
-                <img
-                  src={coffeeLink}
-                  alt="coffee-link"
-                  className="logo--standard"
-                  width="200"
-                />
+                <img src={coffeeLink} alt="prototye-coffee-link" />
               </Link>
             </div>
           </div>

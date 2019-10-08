@@ -25,6 +25,7 @@
 
   .homeGrid__logo {
     margin: auto;
+
     .logo {
       width: 260px;
     }
@@ -32,6 +33,9 @@
 
   .homeGrid__summary {
     padding: 0rem 1rem;
+  }
+  .homeGrid__links img {
+    width: 200px;
   }
 }
 
