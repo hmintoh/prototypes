@@ -1,0 +1,47 @@
+@import "../styles/tokens.scss";
+
+#coffee {
+  background: linear-gradient(
+    to top left,
+    $fontcol-prototype-light 75%,
+    transparent 25%
+  );
+  color: $brandcol-shared-natural;
+  min-height: 100vh;
+  display: flex;
+
+  a {
+    text-decoration: none;
+    font-weight: bold;
+    color: inherit;
+
+    &:hover {
+      transition: all 0.2s ease;
+      border-bottom: 1px solid #bdbdae;
+    }
+  }
+}
+
+.content__summary {
+  text-align: left;
+  width: 100%;
+  height: 100%;
+  margin: auto;
+  max-width: $breakpoint-tablet;
+  padding: 0rem 1rem;
+
+  // &:hover {
+  //   color: $brandcol-coffee-blue;
+  //   transition: all 0.5s ease;
+  // }
+
+  &-intro {
+    font-size: 1.2rem;
+  }
+}
+
+@media (min-width: $breakpoint-tablet) {
+  .content__summary {
+    padding: 0rem 5rem;
+  }
+}
