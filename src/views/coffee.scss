@@ -17,7 +17,7 @@
 
     &:hover {
       transition: all 0.2s ease;
-      border-bottom: 1px solid #bdbdae;
+      border-bottom: 2px solid $brandcol-coffee-blue;
     }
   }
 }
@@ -30,10 +30,10 @@
   max-width: $breakpoint-tablet;
   padding: 0rem 1rem;
 
-  // &:hover {
-  //   color: $brandcol-coffee-blue;
-  //   transition: all 0.5s ease;
-  // }
+  &:hover {
+    color: $brandcol-coffee-blue;
+    transition: all 0.5s ease;
+  }
 
   &-intro {
     font-size: 1.2rem;

@@ -50,6 +50,17 @@ class Home extends Component {
               So we welcome you to Prototype - where ideas that have been
               brewing can finally bloom in full.
             </p>
+
+            <div className="homeGrid__links">
+              <Link to="/coffee">
+                <img
+                  src={coffeeLink}
+                  alt="coffee-link"
+                  className="logo--standard"
+                  width="200"
+                />
+              </Link>
+            </div>
           </div>
         </div>
       </section>
