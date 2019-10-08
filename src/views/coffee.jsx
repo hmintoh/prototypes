@@ -1,10 +1,22 @@
 import React, { Component } from "react";
+import { Link } from "react-router-dom";
+import chevronLeft from "../assets/icons/chevron-left.svg";
+
 import "./coffee.scss";
 
 class Coffee extends Component {
+  componentDidMount() {
+    window.scrollTo(0, 0);
+  }
+
   render() {
     return (
       <div id="coffee">
+        <div class="animated rotateInDownLeft slower">
+          <Link to="/" class="back-button ">
+            <img src={chevronLeft} alt="back-button" width="20" height="20" />
+          </Link>
+        </div>
         <div class="content__summary animated fadeInRight slower">
           <p class="content__summary-intro">
             A good cup of coffee speaks of the collective effort and success of
