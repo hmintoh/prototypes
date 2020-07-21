@@ -1,7 +1,7 @@
 import React, { lazy, Suspense } from "react";
 import { BrowserRouter, Switch, Route } from "react-router-dom";
 
-const Home = lazy(() => import("../views/home"));
+const Home = lazy(() => import("../views/homepage"));
 const Coffee = lazy(() => import("../views/coffee"));
 
 const Router = () => {
