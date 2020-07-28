@@ -3,45 +3,47 @@ import { tokens } from "../../tokens";
 
 const { color, breakpoint, spacing } = tokens;
 
-export const PageWrapper = styled.section`
-  background: ${color.natural.dark};
-  color: ${color.natural.dark};
-  min-height: 100vh;
+const defaultPageWrapperStyles = styled.section`
   display: flex;
   align-items: center;
+  height: 100%;
+  padding: 0 ${spacing.m};
+
+  @media (min-width: ${breakpoint.tablet}) {
+    padding: 0;
+  }
+`;
+
+export const PageWrapper = styled(defaultPageWrapperStyles)`
+  background: ${color.natural.dark};
 `;
 
 export const ContentWrapper = styled.div`
+  color: ${color.system.black};
   text-align: center;
-  width: 100%;
-  height: 100%;
   margin: auto;
-  padding: ${spacing.m} 0;
   max-width: ${breakpoint.tablet};
 
   img {
     width: 260px;
   }
-
-  @media (min-width: ${breakpoint.tablet}) {
-    padding: ${spacing.l} 0;
-  }
 `;
 
 export const ContentSummary = styled.div.attrs({
-  className: "animated fadeIn slower delay-1s",
+  className:
+    "animate__animated animate__fadeIn animate__slower animate__delay-1s",
 })`
-  padding: 0rem ${spacing.m};
-  color: ${color.system.black};
+  margin: auto;
 
   @media (min-width: ${breakpoint.tablet}) {
+    padding: 0rem ${spacing.m};
     max-width: ${breakpoint.mobile};
-    margin: auto;
   }
 `;
 
 export const ContentLinks = styled.div.attrs({
-  className: "animated fadeIn slower delay-1s",
+  className:
+    "animate__animated animate__fadeIn animate__slower animate__delay-1s",
 })`
   display: flex;
   margin: auto;

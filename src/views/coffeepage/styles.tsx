@@ -3,20 +3,40 @@ import { tokens } from "../../tokens";
 
 const { color, breakpoint, spacing, font } = tokens;
 
-export const PageWrapper = styled.section`
+const defaultPageWrapperStyles = styled.section`
+  display: flex;
+  align-items: center;
+  height: 100%;
+  padding: 0 ${spacing.m};
+
+  @media (min-width: ${breakpoint.tablet}) {
+    padding: 0;
+  }
+`;
+
+export const PageWrapper = styled(defaultPageWrapperStyles)`
   background: linear-gradient(
     to top left,
     ${color.natural.light} 75%,
     transparent 25%
   );
+`;
 
-  min-height: 100vh;
-  display: flex;
-  align-items: center;
+export const ContentWrapper = styled.div.attrs({
+  className: "animate__animated animate__fadeInRight animate__slower",
+})`
+  color: ${color.natural.dark};
+  margin: auto;
+  max-width: ${breakpoint.tablet};
+
+  :hover {
+    color: ${color.blue};
+    transition: all 0.5s ease;
+  }
 `;
 
 export const LinkContainer = styled.div.attrs({
-  className: "animated rotateInDownLeft slower",
+  className: "animate__animated animate__rotateInDownLeft animate__slower",
 })`
   a {
     width: ${spacing.xxxxl};
@@ -36,21 +56,6 @@ export const LinkContainer = styled.div.attrs({
     a {
       padding: ${spacing.xs} 0 0 ${spacing.xs};
     }
-  }
-`;
-
-export const ContentWrapper = styled.div.attrs({
-  className: "animated fadeInRight slower",
-})`
-  width: 100%;
-  height: 100%;
-  margin: auto;
-  max-width: ${breakpoint.tablet};
-  color: ${color.natural.dark};
-
-  :hover {
-    color: ${color.blue};
-    transition: all 0.5s ease;
   }
 `;
 
