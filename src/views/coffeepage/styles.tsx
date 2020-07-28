@@ -25,13 +25,17 @@ export const PageWrapper = styled(defaultPageWrapperStyles)`
 export const ContentWrapper = styled.div.attrs({
   className: "animate__animated animate__fadeInRight animate__slower",
 })`
-  color: ${color.natural.dark};
+  color: ${color.blue};
   margin: auto;
   max-width: ${breakpoint.tablet};
 
-  :hover {
-    color: ${color.blue};
-    transition: all 0.5s ease;
+  @media (min-width: ${breakpoint.tablet}) {
+    color: ${color.natural.dark};
+
+    :hover {
+      color: ${color.blue};
+      transition: all 0.5s ease;
+    }
   }
 `;
 

@@ -2,12 +2,13 @@ import React, { FC, useEffect } from "react";
 import { Link } from "react-router-dom";
 import Particles from "react-particles-js";
 
-import logo from "assets/images/prototype_asphalt_bold.png";
-import coffeeLogo from "assets/images/coffee.png";
+import logo from "../../assets/images/prototype_asphalt_bold.png";
+import coffeeLogo from "../../assets/images/coffee.png";
 
 import {
   PageWrapper,
   ContentWrapper,
+  ContentImage,
   ContentSummary,
   ContentLinks,
 } from "./styles";
@@ -34,7 +35,9 @@ const HomePage: FC<{}> = () => {
       </div> */}
 
       <ContentWrapper>
-        <img src={logo} alt="prototype-logo" />
+        <ContentImage>
+          <img src={logo} alt="prototype-logo" />
+        </ContentImage>
 
         <ContentSummary>
           <p>

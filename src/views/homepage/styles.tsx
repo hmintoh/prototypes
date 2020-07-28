@@ -7,7 +7,7 @@ const defaultPageWrapperStyles = styled.section`
   display: flex;
   align-items: center;
   height: 100%;
-  padding: 0 ${spacing.m};
+  padding: ${spacing.xxxl} ${spacing.m};
 
   @media (min-width: ${breakpoint.tablet}) {
     padding: 0;
@@ -23,7 +23,11 @@ export const ContentWrapper = styled.div`
   text-align: center;
   margin: auto;
   max-width: ${breakpoint.tablet};
+`;
 
+export const ContentImage = styled.div.attrs({
+  className: "animate__animated animate__fadeIn",
+})`
   img {
     width: 260px;
   }
