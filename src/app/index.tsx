@@ -1,6 +1,6 @@
 import React, { FC } from "react";
 import Router from "./router";
-import Footer from "../components/footer/footer";
+import Footer from "../components/footer";
 
 import { AppWrapper, BodyWrapper } from "./styles";
 
