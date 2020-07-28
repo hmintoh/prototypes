@@ -6,7 +6,8 @@ const { color, breakpoint, spacing, font } = tokens;
 const defaultPageWrapperStyles = styled.section`
   display: flex;
   align-items: center;
-  height: 100%;
+  overflow-x: hidden;
+  flex: 1;
   padding: 0 ${spacing.m};
 
   @media (min-width: ${breakpoint.tablet}) {

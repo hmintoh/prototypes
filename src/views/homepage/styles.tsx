@@ -7,7 +7,8 @@ const defaultPageWrapperStyles = styled.section`
   display: flex;
   align-items: center;
   height: 100%;
-  padding: ${spacing.xxxl} ${spacing.m};
+  flex: 1;
+  padding: 0 ${spacing.m};
 
   @media (min-width: ${breakpoint.tablet}) {
     padding: 0;
@@ -23,6 +24,12 @@ export const ContentWrapper = styled.div`
   text-align: center;
   margin: auto;
   max-width: ${breakpoint.tablet};
+
+  padding: ${spacing.xxxl} 0;
+
+  @media (min-width: ${breakpoint.tablet}) {
+    padding: 0;
+  }
 `;
 
 export const ContentImage = styled.div.attrs({

@@ -4,12 +4,14 @@ import { tokens } from "../tokens";
 const { spacing, breakpoint } = tokens;
 
 export const AppWrapper = styled.div`
-  width: 100vw;
-  height: 100vh;
   display: flex;
   flex-flow: column;
+  width: 100vw;
+  min-height: 100vh;
 `;
 
 export const BodyWrapper = styled.main`
-  flex-grow: 1;
+  flex: 1;
+  display: flex;
+  flex-flow: column;
 `;
