@@ -9,7 +9,7 @@ import { tokens } from "../../styles/tokens";
 const DevPage: FC<{}> = () => {
   return (
     <TopicPage variant="dev">
-      <Particle>
+      {/* <Particle>
         <Particles
           params={{
             particles: {
@@ -21,7 +21,7 @@ const DevPage: FC<{}> = () => {
             },
           }}
         />
-      </Particle>
+      </Particle> */}
 
       <ContentIntro>
         We design and build digital solutions to help forward-thinking
