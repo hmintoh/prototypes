@@ -1,14 +1,10 @@
-import React, { FC, useEffect } from "react";
+import React, { FC } from "react";
 import { Link } from "react-router-dom";
 import TopicPage from "../templates/topic-page";
 
-import { ContentIntro, ContentBody } from "./styles";
+import { ContentIntro } from "./styles";
 
 const CoffeePage: FC<{}> = () => {
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  });
-
   return (
     <TopicPage variant="coffee">
       <ContentIntro>
@@ -19,7 +15,7 @@ const CoffeePage: FC<{}> = () => {
         part of a coffee's story.
       </ContentIntro>
 
-      <ContentBody>
+      <p>
         With prototype coffee, our goal is to share these stories and journeys
         with the community. We aim to provide quality coffee experience by
         constantly working towards improvements in our technique and service.
@@ -27,7 +23,7 @@ const CoffeePage: FC<{}> = () => {
         <a href="mailto:coffee@prototypes.sg?subject=Inquiry on coffee cart services">
           coffee@prototypes.sg
         </a>
-      </ContentBody>
+      </p>
     </TopicPage>
   );
 };

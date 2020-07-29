@@ -1,7 +1,7 @@
 import styled from "styled-components";
-import { tokens } from "../../tokens";
+import { tokens } from "../../styles/tokens";
 
-const { spacing, font, breakpoint, color } = tokens;
+const { spacing, font, color } = tokens;
 
 export const FooterWrapper = styled.footer`
   background-color: ${color.pink.light};

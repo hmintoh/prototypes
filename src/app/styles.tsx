@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { tokens } from "../tokens";
+import { tokens } from "../styles/tokens";
 
 const { spacing, breakpoint } = tokens;
 

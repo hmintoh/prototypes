@@ -1,4 +1,4 @@
-import React, { lazy, Suspense } from "react";
+import React, { lazy, Suspense, useEffect } from "react";
 import { BrowserRouter, Switch, Route } from "react-router-dom";
 
 const HomePage = lazy(() => import("../views/homepage"));
@@ -6,6 +6,10 @@ const CoffeePage = lazy(() => import("../views/coffeepage"));
 const DevPage = lazy(() => import("../views/devpage"));
 
 const Router = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  });
+
   return (
     <BrowserRouter>
       <Suspense fallback="">

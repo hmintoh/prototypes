@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { tokens } from "../../tokens";
+import { tokens } from "../../styles/tokens";
 
 const { color, breakpoint, spacing } = tokens;
 
@@ -64,10 +64,3 @@ export const ContentLinks = styled.div.attrs({
     width: 200px;
   }
 `;
-
-// #particles-js {
-//   position: absolute;
-//   width: 100%;
-//   height: 100%;
-//   z-index: -1;
-// }

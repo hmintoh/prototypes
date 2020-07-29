@@ -1,10 +1,10 @@
-import React, { FC, useEffect } from "react";
+import React, { FC } from "react";
 import { Link } from "react-router-dom";
 import Particles from "react-particles-js";
 import TopicPage from "../templates/topic-page";
 
 import { ContentIntro, Particle } from "./styles";
-import { tokens } from "../../tokens";
+import { tokens } from "../../styles/tokens";
 
 const DevPage: FC<{}> = () => {
   return (
@@ -16,8 +16,8 @@ const DevPage: FC<{}> = () => {
               number: { value: 20 },
               size: { value: 2 },
               move: { speed: 1 },
-              color: { value: tokens.color.maize },
-              line_linked: { color: tokens.color.maize },
+              color: { value: tokens.color.pink.light },
+              line_linked: { color: tokens.color.pink.light },
             },
           }}
         />

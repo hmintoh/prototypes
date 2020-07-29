@@ -1,6 +1,5 @@
-import React, { FC, useEffect } from "react";
+import React, { FC } from "react";
 import { Link } from "react-router-dom";
-import Particles from "react-particles-js";
 
 import logo from "../../assets/images/prototype_asphalt_bold.png";
 import coffeeLogo from "../../assets/images/coffee.png";
@@ -14,26 +13,8 @@ import {
 } from "./styles";
 
 const HomePage: FC<{}> = () => {
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, []);
-
   return (
     <PageWrapper>
-      {/* <div id="particles-js">
-        <Particles
-          params={{
-            particles: {
-              number: { value: 30 },
-              size: { value: 2 },
-              move: { speed: 1 },
-              color: { value: "#a66454" },
-              line_linked: { color: "#a66454" },
-            },
-          }}
-        />
-      </div> */}
-
       <ContentWrapper>
         <ContentImage>
           <img src={logo} alt="prototype-logo" />
@@ -59,9 +40,9 @@ const HomePage: FC<{}> = () => {
         </ContentSummary>
 
         <ContentLinks>
-          <Link to="/coffee">
+          {/* <Link to="/coffee">
             <img src={coffeeLogo} alt="prototye-coffee-link" />
-          </Link>
+          </Link> */}
         </ContentLinks>
       </ContentWrapper>
     </PageWrapper>
