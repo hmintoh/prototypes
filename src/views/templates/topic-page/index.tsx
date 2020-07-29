@@ -13,7 +13,7 @@ import {
 
 interface TopicPageProps {
   children: ReactNode;
-  variant: "dev";
+  variant: "dev" | "coffee";
 }
 
 const TopicPage = (props: TopicPageProps) => {
@@ -25,7 +25,7 @@ const TopicPage = (props: TopicPageProps) => {
         <LinkContainer>
           <Link to="/">
             <img
-              src={variant == "dev" ? chevronLeftLight : chevronLeftDark}
+              src={variant == "dev" ? chevronLeftLight : chevronLeftLight}
               alt="back-button"
               width="28"
               height="28"

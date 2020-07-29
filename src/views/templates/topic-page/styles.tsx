@@ -3,11 +3,13 @@ import { tokens } from "../../../tokens";
 
 const { color, breakpoint, spacing, font } = tokens;
 
-const defaultFontColor = color.natural.dark;
-const hoverFontColor = color.natural.dark;
+const lightDefaultFontColor = color.natural.dark;
+const lightHoverFontColor = color.blue;
+const darkDefaultFontColor = color.natural.dark;
+const darkHoverFontColor = color.natural.dark;
 
-interface PageWrapperProps {
-  variant: "dev";
+interface TemplateProps {
+  variant: "dev" | "coffee";
 }
 
 const defaultPageWrapperStyles = styled.section`
@@ -20,18 +22,6 @@ const defaultPageWrapperStyles = styled.section`
   @media (min-width: ${breakpoint.tablet}) {
     padding: 0;
   }
-`;
-
-export const PageWrapper = styled(defaultPageWrapperStyles)<PageWrapperProps>`
-  ${(props) =>
-    props.variant === "dev" &&
-    css`
-      background: linear-gradient(
-        to top right,
-        ${color.blue} 75%,
-        ${color.blue} 25%
-      );
-    `}
 `;
 
 export const ContentWrapper = styled.div.attrs({
@@ -50,16 +40,14 @@ export const LinkContainer = styled.div`
   display: inline-block;
 
   a {
-    width: ${spacing.xxxxl};
-    height: ${spacing.xxxxl};
-    border-radius: 0 0 ${spacing.xxxl} 0;
-    -moz-border-radius: 0 0 ${spacing.xxxl} 0;
-    -webkit-border-radius: 0 0 ${spacing.xxxl} 0;
+    display: flex;
+    width: auto;
+    height: auto;
+    padding-right: ${spacing.xxl};
   }
 
   @media (min-width: ${breakpoint.tablet}) {
     :hover {
-      background: none;
       transform: translateX(-30%);
       transition: all 0.2s ease;
     }
@@ -69,13 +57,50 @@ export const LinkContainer = styled.div`
 export const ContentContainer = styled.div.attrs({
   className: "animate__animated animate__fadeInRight animate__slower",
 })`
-  color: ${defaultFontColor};
-
   *::selection {
     background: ${color.maize};
   }
+`;
 
-  a:hover {
-    border-bottom: 2px solid ${hoverFontColor};
-  }
+export const PageWrapper = styled(defaultPageWrapperStyles)<TemplateProps>`
+  ${(props) =>
+    props.variant === "dev" &&
+    css`
+      background: ${color.blue};
+
+      ${ContentContainer} {
+        color: ${darkDefaultFontColor};
+
+        a:hover {
+          border-bottom: 2px solid ${darkHoverFontColor};
+        }
+      }
+    `}
+
+  ${(props) =>
+    props.variant === "coffee" &&
+    css`
+      background: linear-gradient(
+        to top left,
+        ${color.natural.light} 75%,
+        transparent 25%
+      );
+
+      ${ContentContainer} {
+        color: ${lightHoverFontColor};
+
+        @media (min-width: ${breakpoint.tablet}) {
+          color: ${lightDefaultFontColor};
+
+          :hover {
+            color: ${lightHoverFontColor};
+            transition: all 0.3s ease;
+          }
+
+          a:hover {
+            border-bottom: 2px solid ${lightHoverFontColor};
+          }
+        }
+      }
+    `}
 `;
