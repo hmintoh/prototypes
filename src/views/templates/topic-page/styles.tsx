@@ -3,6 +3,9 @@ import { tokens } from "../../../tokens";
 
 const { color, breakpoint, spacing, font } = tokens;
 
+const defaultFontColor = color.natural.dark;
+const hoverFontColor = color.natural.dark;
+
 interface PageWrapperProps {
   variant: "dev";
 }
@@ -24,9 +27,9 @@ export const PageWrapper = styled(defaultPageWrapperStyles)<PageWrapperProps>`
     props.variant === "dev" &&
     css`
       background: linear-gradient(
-        to top left,
+        to top right,
         ${color.blue} 75%,
-        ${color.natural.light} 25%
+        ${color.blue} 25%
       );
     `}
 `;
@@ -34,40 +37,45 @@ export const PageWrapper = styled(defaultPageWrapperStyles)<PageWrapperProps>`
 export const ContentWrapper = styled.div.attrs({
   className: "animate__animated animate__fadeInRight animate__slower",
 })`
-  color: ${color.blue};
   margin: auto;
   max-width: ${breakpoint.tablet};
+  padding: 20% 0 10% 0;
 
   @media (min-width: ${breakpoint.tablet}) {
-    color: ${color.natural.dark};
-
-    :hover {
-      color: ${color.blue};
-      transition: all 0.5s ease;
-    }
+    padding: 0;
   }
 `;
 
-export const LinkContainer = styled.div.attrs({
-  className: "animate__animated animate__rotateInDownLeft animate__delay-2s",
-})`
+export const LinkContainer = styled.div`
+  display: inline-block;
+
   a {
     width: ${spacing.xxxxl};
     height: ${spacing.xxxxl};
     border-radius: 0 0 ${spacing.xxxl} 0;
     -moz-border-radius: 0 0 ${spacing.xxxl} 0;
     -webkit-border-radius: 0 0 ${spacing.xxxl} 0;
-
-    :hover {
-      background: ${color.natural.dark};
-      transform: scale(1.2);
-      transition: all 0.2s ease;
-    }
   }
 
   @media (min-width: ${breakpoint.tablet}) {
-    a {
-      padding: ${spacing.xs} 0 0 ${spacing.xs};
+    :hover {
+      background: none;
+      transform: translateX(-30%);
+      transition: all 0.2s ease;
     }
+  }
+`;
+
+export const ContentContainer = styled.div.attrs({
+  className: "animate__animated animate__fadeInRight animate__slower",
+})`
+  color: ${defaultFontColor};
+
+  *::selection {
+    background: ${color.maize};
+  }
+
+  a:hover {
+    border-bottom: 2px solid ${hoverFontColor};
   }
 `;
