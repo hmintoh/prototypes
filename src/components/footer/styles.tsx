@@ -4,7 +4,7 @@ import { tokens } from "../../tokens";
 const { spacing, font, breakpoint, color } = tokens;
 
 export const FooterWrapper = styled.footer`
-  background-color: ${color.maize};
+  background-color: ${color.pink.light};
   color: inherit;
   font-size: ${font.size.xs};
   padding: ${spacing.xs} 0;
