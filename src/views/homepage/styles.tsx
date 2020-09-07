@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { tokens } from "../../styles/tokens";
+import bg from "../../assets/images/bg_cloud_brown_2.jpg";
 
 const { color, breakpoint, spacing } = tokens;
 
@@ -16,7 +17,12 @@ const defaultPageWrapperStyles = styled.section`
 `;
 
 export const PageWrapper = styled(defaultPageWrapperStyles)`
-  background: ${color.natural.light};
+  background-image: linear-gradient(
+      rgba(255, 255, 255, 0.3),
+      rgba(255, 255, 255, 0.3)
+    ),
+    url(${bg});
+  background-size: cover;
 `;
 
 export const ContentWrapper = styled.div`
@@ -24,7 +30,6 @@ export const ContentWrapper = styled.div`
   text-align: center;
   margin: auto;
   max-width: ${breakpoint.tablet};
-
   padding: ${spacing.xxxl} 0;
 
   @media (min-width: ${breakpoint.tablet}) {
@@ -35,6 +40,9 @@ export const ContentWrapper = styled.div`
 export const ContentImage = styled.div.attrs({
   className: "animate__animated animate__fadeIn",
 })`
+  display: flex;
+  justify-content: center;
+
   img {
     width: 280px;
   }
