@@ -1,7 +1,7 @@
 import React, { FC } from "react";
 import { Link } from "react-router-dom";
 
-import logo from "../../assets/images/prototype_asphalt_bold.png";
+import logo from "../../assets/images/proto_blue.png";
 import coffeeLogo from "../../assets/images/coffee.png";
 
 import {

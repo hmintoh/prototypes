@@ -16,7 +16,7 @@ const defaultPageWrapperStyles = styled.section`
 `;
 
 export const PageWrapper = styled(defaultPageWrapperStyles)`
-  background: ${color.natural.dark};
+  background: ${color.natural.light};
 `;
 
 export const ContentWrapper = styled.div`
@@ -36,7 +36,7 @@ export const ContentImage = styled.div.attrs({
   className: "animate__animated animate__fadeIn",
 })`
   img {
-    width: 260px;
+    width: 280px;
   }
 `;
 
