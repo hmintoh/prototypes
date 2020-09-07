@@ -1,5 +1,6 @@
 import styled, { css } from "styled-components";
 import { tokens } from "../../../styles/tokens";
+import bg from "../../../assets/images/bg_cloud_blue.jpg";
 
 const { color, breakpoint, spacing, font } = tokens;
 
@@ -66,7 +67,8 @@ export const PageWrapper = styled(defaultPageWrapperStyles)<TemplateProps>`
   ${(props) =>
     props.variant === "dev" &&
     css`
-      background: ${color.blue};
+      background-image: url(${bg});
+      background-size: cover;
 
       ${ContentContainer} {
         color: ${darkDefaultFontColor};
