@@ -7,6 +7,8 @@ import { ContentIntro } from "./styles";
 const CoffeePage: FC<{}> = () => {
   return (
     <TopicPage variant="coffee">
+      <h1>prototype Coffee</h1>
+
       <ContentIntro>
         A good cup of coffee speaks of the collective effort and success of the
         many hands that went into delivering the coffee into your hands. From
