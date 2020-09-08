@@ -44,7 +44,7 @@ export const ContentImage = styled.div.attrs({
   justify-content: center;
 
   img {
-    width: 280px;
+    width: 260px;
   }
 `;
 

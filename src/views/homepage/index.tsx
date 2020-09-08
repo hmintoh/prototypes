@@ -2,7 +2,6 @@ import React, { FC } from "react";
 import { Link } from "react-router-dom";
 
 import logo from "../../assets/images/proto_blue.png";
-import coffeeLogo from "../../assets/images/coffee.png";
 
 import {
   PageWrapper,
@@ -38,12 +37,6 @@ const HomePage: FC<{}> = () => {
             can finally bloom in full.
           </p>
         </ContentSummary>
-
-        <ContentLinks>
-          {/* <Link to="/coffee">
-            <img src={coffeeLogo} alt="prototye-coffee-link" />
-          </Link> */}
-        </ContentLinks>
       </ContentWrapper>
     </PageWrapper>
   );
