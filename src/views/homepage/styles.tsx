@@ -45,6 +45,7 @@ export const ContentImage = styled.div.attrs({
 
   img {
     width: 260px;
+    height: 100%;
   }
 `;
 
