@@ -7,7 +7,7 @@ const Footer: FC<{}> = () => {
 
   return (
     <FooterWrapper>
-      © {currentYear} prototype holdings. all rights reserved.
+      Copyright © 2018 - {currentYear} prototype holdings
     </FooterWrapper>
   );
 };
