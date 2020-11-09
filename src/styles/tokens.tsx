@@ -43,5 +43,10 @@ export const tokens = {
       l: "1.25rem" /**  l : 1.25rem / 20px  */,
       xl: "1.5rem" /**  xl : 1.5rem / 24px  */,
     },
+    weight: {
+      bold: 700,
+      semi: 600,
+      regular: 400,
+    },
   },
 };
