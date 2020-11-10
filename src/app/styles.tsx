@@ -1,7 +1,4 @@
 import styled from "styled-components";
-import { tokens } from "../styles/tokens";
-
-const { spacing, breakpoint } = tokens;
 
 export const AppWrapper = styled.div`
   display: flex;

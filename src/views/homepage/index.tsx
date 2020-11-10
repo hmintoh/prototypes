@@ -1,5 +1,4 @@
 import React, { FC } from "react";
-import { Link } from "react-router-dom";
 
 import logo from "../../assets/images/proto_blue.png";
 
@@ -8,7 +7,6 @@ import {
   ContentWrapper,
   ContentImage,
   ContentSummary,
-  ContentLinks,
 } from "./styles";
 
 const HomePage: FC<{}> = () => {

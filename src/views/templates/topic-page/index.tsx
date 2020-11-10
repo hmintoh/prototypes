@@ -1,7 +1,6 @@
 import React, { ReactNode } from "react";
 import { Link } from "react-router-dom";
 
-import chevronLeftDark from "../../../assets/icons/chevron-left-dark.svg";
 import chevronLeftLight from "../../../assets/icons/chevron-left-light.svg";
 
 import {
@@ -25,7 +24,7 @@ const TopicPage = (props: TopicPageProps) => {
         <LinkContainer>
           <Link to="/">
             <img
-              src={variant == "dev" ? chevronLeftLight : chevronLeftLight}
+              src={variant === "dev" ? chevronLeftLight : chevronLeftLight}
               alt="back-button"
               width="28"
               height="28"

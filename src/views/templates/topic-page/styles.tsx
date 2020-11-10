@@ -2,7 +2,7 @@ import styled, { css } from "styled-components";
 import { tokens } from "../../../styles/tokens";
 import bgBlue from "../../../assets/images/bg_cloud_blue.jpg";
 
-const { color, breakpoint, spacing, font } = tokens;
+const { color, breakpoint, spacing } = tokens;
 
 const lightDefaultFontColor = color.natural.dark;
 const lightHoverFontColor = color.blue;

@@ -1,5 +1,4 @@
 import React, { FC } from "react";
-import { Link } from "react-router-dom";
 import TopicPage from "../templates/topic-page";
 
 import { ContentIntro } from "./styles";
