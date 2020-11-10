@@ -7,6 +7,6 @@ export const FooterWrapper = styled.footer`
   background-color: ${color.natural.dark};
   color: inherit;
   font-size: ${font.size.xs};
-  padding: ${spacing.xs} 0;
+  padding: ${spacing.xxs} 0;
   text-align: center;
 `;

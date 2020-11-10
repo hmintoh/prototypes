@@ -9,7 +9,7 @@ export const tokens = {
     maize: "#c6a351",
     natural: {
       light: "#f6f4f3",
-      dark: "#bdbdae",
+      dark: "#c7c7b9",
     },
     pink: {
       light: "#c6ab9c",

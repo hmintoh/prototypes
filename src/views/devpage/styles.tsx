@@ -23,7 +23,8 @@ export const PageHeader = styled.header`
 `;
 
 export const ListStyles = styled.ul`
-  margin-top: ${spacing.xxs};
+  margin-top: -0.5rem;
+  margin-bottom: ${spacing.xl};
   padding: 0;
   list-style: none;
 `;

@@ -29,7 +29,6 @@ const DevPage: FC<{}> = () => {
         <a href="mailto:dev@prototypes.sg?subject=Inquiry on development services">
           dev@prototypes.sg
         </a>
-        .
       </p>
     </TopicPage>
   );
