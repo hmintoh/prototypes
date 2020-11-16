@@ -21,7 +21,7 @@ const TopicPage = (props: TopicPageProps) => {
   return (
     <PageWrapper variant={variant}>
       <ContentWrapper>
-        <LinkContainer>
+        {/* <LinkContainer>
           <Link to="/">
             <img
               src={variant === "dev" ? chevronLeftLight : chevronLeftLight}
@@ -30,7 +30,7 @@ const TopicPage = (props: TopicPageProps) => {
               height="28"
             />
           </Link>
-        </LinkContainer>
+        </LinkContainer> */}
 
         <ContentContainer>{children}</ContentContainer>
       </ContentWrapper>
