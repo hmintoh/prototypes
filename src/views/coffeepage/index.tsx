@@ -1,18 +1,22 @@
 import React, { FC } from "react";
 import TopicPage from "../templates/topic-page";
 
+import coffeeLogo from "../../assets/images/coffee-title.svg";
+
 import { ContentIntro } from "./styles";
 
 const CoffeePage: FC<{}> = () => {
   return (
     <TopicPage variant="coffee">
-      <h1>prototype Coffee</h1>
-
       <ContentIntro>
-        A good cup of coffee speaks of the collective effort and success of the
-        many hands that went into delivering the coffee into your hands. From
-        the farmers to the roasters to the baristas, they all play in part in
-        preserving the coffee's character and form its story.
+        <h1>prototype Coffee</h1>
+        <img src={coffeeLogo} alt="prototoype coffee logo" />
+        <p>
+          A good cup of coffee speaks of the collective effort and success of
+          the many hands that went into delivering the coffee into your hands.
+          From the farmers to the roasters to the baristas, they all play in
+          part in preserving the coffee's character and form its story.
+        </p>
       </ContentIntro>
 
       <p>
