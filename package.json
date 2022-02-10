@@ -21,7 +21,7 @@
     "@types/react-router-dom": "^5.1.5",
     "@types/styled-components": "^5.1.1",
     "animate.css": "^4.0.0",
-    "node-sass": "^4.12.0",
+    "node-sass": "^7.0.0",
     "react": "^17.0.1",
     "react-app-polyfill": "^1.0.6",
     "react-dom": "^17.0.1",
