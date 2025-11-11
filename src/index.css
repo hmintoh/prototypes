@@ -1,0 +1,67 @@
+:root {
+  font-family: system-ui, Helvetica, sans-serif;
+  font-family: "Chillax-Medium";
+  color: #ede5ab;
+  line-height: 1.5;
+  font-weight: 400;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+/* typography */
+
+h1 {
+  font-family: "Chillax-SemiBold";
+  text-shadow: 2px 3px #4a4738;
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+footer {
+  font-family: "Chillax";
+  font-size: 0.8rem;
+}
+
+/* fonts */
+
+@font-face {
+  font-family: "Striper";
+  src: url("./assets/fonts/Striper-Regular.woff2") format("woff2"),
+    url("./assets/fonts/Striper-Regular.ttf") format("ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Chillax";
+  src: url("./assets/fonts/Chillax-Regular.woff2") format("woff2"),
+    url("./assets/fonts/Chillax-Regular.ttf") format("ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Chillax-Medium";
+  src: url("./assets/fonts/Chillax-Medium.woff2") format("woff2"),
+    url("./assets/fonts/Chillax-Regular.ttf") format("ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Chillax-SemiBold";
+  src: url("./assets/fonts/Chillax-Semibold.woff2") format("woff2"),
+    url("./assets/fonts/Chillax-Variable.ttf") format("ttf");
+  font-weight: normal;
+  font-style: normal;
+}

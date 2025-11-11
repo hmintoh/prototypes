@@ -1,0 +1,24 @@
+#root {
+  background: url("./assets/bg_cloud_purple.jpg");
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+}
+
+main {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: auto;
+  max-width: 700px;
+  padding: 2rem;
+}
+
+footer {
+  padding: 1rem;
+}
