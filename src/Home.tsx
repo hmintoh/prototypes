@@ -1,4 +1,4 @@
-import styles from "./Home.module.css";
+import styles from "./home.module.css";
 
 function Home() {
   return (
@@ -25,4 +25,4 @@ function Home() {
   );
 }
 
-export default Home;
+export { Home };

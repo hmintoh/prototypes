@@ -1,8 +1,8 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
-import styles from "./App.module.css";
-import Home from "./Home";
-import Coffee from "./Coffee";
+import styles from "./app.module.css";
+import { Home } from "./Home.tsx";
+import { Coffee } from "./Coffee.tsx";
 
 function App() {
   return (
@@ -12,7 +12,7 @@ function App() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/coffee" element={<Coffee />} />
-            <Route path="*" element={<div>Page Not Found</div>} />
+            <Route path="*" element={<Home />} />
           </Routes>
         </Router>
       </main>

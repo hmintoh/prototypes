@@ -3,7 +3,10 @@
   justify-content: center;
   display: flex;
   flex-direction: column;
-  text-align: center;
+}
+
+.email {
+  color: inherit;
 }
 
 @media (min-width: 768px) {
