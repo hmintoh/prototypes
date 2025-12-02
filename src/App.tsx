@@ -1,33 +1,28 @@
-import "./App.css";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+
+import styles from "./App.module.css";
+import Home from "./Home";
+import Coffee from "./Coffee";
 
 function App() {
   return (
-    <>
-      <main>
-        <h1>Prototype</h1>
-        <p>
-          To prototype is to give form to a thought; to let an idea step into
-          the world, even if it wobbles at first. Each iteration teaches us
-          something new, guiding us closer to what it is meant to become. We
-          follow curiosity wherever it leads, embracing the messy, magical
-          process of turning imagination into reality.
-        </p>
-        <p>
-          Our community keeps us moving - a collection of curious minds, bold
-          experiments, and shared “what ifs”. What you see today is the result
-          of that collective rhythm: the urge to reimagine, to refine, to make
-          something that feels alive.
-        </p>
-        <p>
-          So welcome to Prototype - where ideas that have been brewing can
-          finally bloom in full.
-        </p>
+    <div className={styles.container}>
+      <main className={styles.main}>
+        <Router>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/coffee" element={<Coffee />} />
+            <Route path="*" element={<div>Page Not Found</div>} />
+          </Routes>
+        </Router>
       </main>
+
       <footer>
-        Copyright © 2018 - {new Date().getFullYear()} prototype holdings
+        © 2018 - {new Date().getFullYear()} prototype holdings. made with ♡ in
+        sg.
       </footer>
-    </>
+    </div>
   );
 }
 
-export default App;
+export { App };

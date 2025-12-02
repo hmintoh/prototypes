@@ -1,0 +1,13 @@
+.section {
+  margin: auto;
+  padding: 1rem;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: 768px) {
+  .section {
+    width: 60%;
+  }
+}
