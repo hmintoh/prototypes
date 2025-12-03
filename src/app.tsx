@@ -1,8 +1,8 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 import styles from "./app.module.css";
-import { Home } from "./Home.tsx";
-import { Coffee } from "./Coffee.tsx";
+import { Home } from "./home.tsx";
+import { Coffee } from "./coffee.tsx";
 
 function App() {
   return (
